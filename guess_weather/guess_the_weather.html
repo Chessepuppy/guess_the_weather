@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what's the weather</title>
+</head>
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/index.css">
+<script src="./js/index.js"></script>
+<body>
+    <div class="content">
+        <audio id="audio" src=".music/sunny.mp3"></audio>
+        <h1>Guess What The Weather Is Like Today?</h1>
+        <div class="w_img">
+            <img id="weather" src="./images/cloudy.png" alt="">
+        <h1>Type The Date Here</h1> 
+       <div id="date">
+        <input id="date_iput" type="text" placeholder=" Example 20230305">
+       </div>
+       <div class="reset_btn"  onclick="reset()"> 
+            <h1>SUBMIT</h1>
+       </div>
+       <div class="right-col">
+        <img src="images/play.png" id="icon">
+       </div>
+       <div class="song">
+        <p>Song for you</p>
+       </div>
+    </div>
+    <audio id="mySong">
+        <source src="music/247.mp3" type="audio/mp3">
+    </audio>
+    <script> 
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src="images/stop.png";
+            }else{
+                mySong.pause();
+                icon.src="images/play.png";
+            }
+        }
+    </script>
+</body>
+</html>

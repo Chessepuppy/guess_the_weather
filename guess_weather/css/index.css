@@ -1,0 +1,68 @@
+.content {
+  width: 60vw;
+  height: 55vh;
+  padding: 40px;
+  margin: 0 auto;
+  background: #0094ff;
+  margin-top: 100px;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+}
+.w_img {
+  height: 200px;
+  text-align: center;
+}
+.w_img img {
+  width: 200px;
+  height: 100%;
+}
+#date{
+    margin: 0 auto;
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    text-align: left;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 0 6px;
+}
+#date input{
+    height: 100%;
+    font-size: 16px;
+}
+.reset_btn{
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.right-col{
+  float: right;
+  margin-right: 212px;
+  margin-top: -330px;
+  display: flex;
+  align-items: center;
+}
+
+.song p{
+  float: right;
+  font-size: 16px;
+  font-weight: 450;
+  margin-right: 100px;
+  margin-top: -322px;
+}
+
+#icon{
+  width: 39px;
+  height: 39px;
+  pointer-events: auto;
+  cursor: pointer;
+}
